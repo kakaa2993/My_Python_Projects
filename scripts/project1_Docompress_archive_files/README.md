@@ -1,4 +1,4 @@
-# Download GeeksForGeeks Articles as pdf
+# DECOMPRESS ARCHIVE FILES SCRIPT
 <!--Remove the below lines and add yours -->
 This script decompress all the archive files in the current working directory ones that mean he create  and extract the archive files into subfolder in the same current directory .
 
