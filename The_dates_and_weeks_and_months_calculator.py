@@ -2,7 +2,6 @@
 
 
 # message about the programe
-
 print("/" *80)
 print("  Hello and welcome to the days and weeks and months calculator  ".center(80,"/"))
 print("  This program convert your age(by years) to days or weeks or month as you want  ".center(80,"/"))
@@ -10,7 +9,6 @@ print("/" *80)
 
 
 #collect data and print the result of calculation
-
 answer = ""
 while answer != "no" or answer != "n":
 	age = input("What is your age?(by years): ").strip()
