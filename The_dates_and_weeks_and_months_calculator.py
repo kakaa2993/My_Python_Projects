@@ -17,7 +17,10 @@ while answer != "no" or answer != "n":
                 continue
 
 	age = int(age)
-	user = input("What do you want to convert to: months ,weeks , days ? ").lower().strip()
+	user = input("What do you want to convert to: months ,weeks , days ?(m/w/d) ").lower().strip()
+	if user not in ['m','month','d','days','w','weeks']:
+		print('You are wrong!!!, you can only choose between (months/weeks/days)')
+		continue
 	days = age * 365
 	month = (age*365)/30
 	week = month *4
