@@ -17,19 +17,21 @@ def game_brain_logic():
 
 
 		I am thinkin of a 3-digit number. Try to guess what is it.
-		Here are some clues:
-		when i say :      That means :
+		A version of this game is featured in the book "The Big Book of Small Python Projects"
+                I am thinking of a {}-digit number with no repeated digits.
+		Try to guess what it is. Here are some clues:
+		when I say :      That means :
 		  Pico             One digit is correct but in the wrong position.
 		  Fermi            One digit is correct and in the right position.
 		  Bagels           No digit is correct.
-
-		I have throught up a number.
+		  
+		  I have thought up a number.
 		  You have 10 guesses to get it.
 		 """)
 
 	#The player has 10 guesses
 	num_of_tries = 0
-	while num_of_tries < 11:
+	while num_of_tries < 11: 
 		player_solution=[]
 		print(f"Guess #{num_of_tries}:")
 		guess = input("> ")
