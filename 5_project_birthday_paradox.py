@@ -63,7 +63,7 @@ def generate_birthdays(): # Main function
 			birthdays_list_of_100000 = [ ]
 			for count_ in range(100000):
 				if count_ % 10000 == 0:
-					print(count_," simulation run...")
+					print(count_,"simulation run...")
 				if count_ == 99999:
 					print("100000 simulation run")
 

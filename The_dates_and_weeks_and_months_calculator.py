@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+''' If you are wander , how days or how weeks or how months did you leaved? than this program for you.
+This progarm convert age(by years) to days or weeks or months , you can choice one of these and let the program do the calculation.'''
+
 
 # message about the programe
 print("/" *80)
@@ -10,7 +13,7 @@ print("/" *80)
 
 #collect data and print the result of calculation
 answer = ""
-while answer != "no" or answer != "n":
+while answer != "no" or answer != "n": # Main loop
 	age = input("What is your age?(by years): ").strip()
 	if age.isnumeric() == False:
                 print('Age must be a number!!!')
