@@ -50,6 +50,7 @@ def generate_birthdays(): # Main function
 		#Sorte the birthdays and choice the most repeated birthday if it's exist.
 		birthdays_dict = sorted(birthdays_dict.items(), key=lambda repetition: repetition[1],reverse=True)
 		if birthdays_dict[0][1] > 1:
+			print()
 			print(f"In this simulation, multiple people have a birthday on {birthdays_dict[0][0]} \n")
 		else:
 			print("All the birthdays are unique.\n") # All birthdays are unique.
@@ -57,9 +58,7 @@ def generate_birthdays(): # Main function
 
 		#Generate a random birthdays {num_of_birthdays}  100000 time:
 		if input(f"Generating {num_of_birthdays} random birthdays 100,000 times ...\nPress Enter to begin...") == "":
-			print("100000 simulation run...")
-			print("Let's run another 100,000 simulation.\n")
-
+			print("Let's run another 100,000 simulation.")
 			birthdays_list_of_100000 = [ ]
 			for count_ in range(100000):
 				if count_ % 10000 == 0:
@@ -88,7 +87,11 @@ def generate_birthdays(): # Main function
 				if list_[0][1] > 1:
 					count += 1
 			print()
-			print(f"""Out of 100,000 simulations of {num_of_birthdays} people, there was a matching birthay in that group {count} times. This means that {num_of_birthdays} people have {round(count/100000 *100),2} % chance of having a matchimg birthday in their group.\nThat's more than you would expect!""")
+			print(f"""Out of 100,000 simulations of {num_of_birthdays} people,
+There was a matching birthay in that group {count} times.
+This means that {num_of_birthdays} people have {round(count/100000 *100, 2)} % chance 
+of having a matchimg birthday in their group.
+That's more than you would expect!""")
 	else:
 		print("you are wrong, choose a number positive below 100")
 
