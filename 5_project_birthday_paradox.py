@@ -14,7 +14,8 @@ This prject inspired from the book Big Small Python Programming'''
 birthday = datetime.datetime(2022, 1, 1)
 
 print(''' Birthday paradox, by BELAMIRI Zakarya kakaa2993@gmail.com 
---snip--
+The birthday problem asks for an approximate probability that in a group of n people at least two have the same birthday.
+
 How many birthdays shall I generate? (Max 100)''')
 
 num_of_birthdays = int(input('> '))
