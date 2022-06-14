@@ -3,10 +3,11 @@
 import random
 import datetime
 import time
-import concurrent.futures
 
 
-''' Initialise the programe by the first discription and take the input of the number of birthdays that we would generate'''
+''' Explore the probability of the "Birthday Paradox" by this simulation.
+You can get more info about the birthday paradox here at : https://en.wikipedia.org/wiki/Birthday_problem
+This prject inspired from the book Big Small Python Programming'''
 
 
 
@@ -85,7 +86,8 @@ def generate_birthdays(): # Main function
 			for list_ in birthdays_list_of_100000:
 				if list_[0][1] > 1:
 					count += 1
-			print(f"""Out of 100,000 simulations of {num_of_birthdays} people, there was a matching birthay in that group {count} times. This means that {num_of_birthdays}  people have {round(count/100000 *100)} % chance of having a matchimg birthday in their group.\nThat's more than you would expect!""")
+			print()
+			print(f"""Out of 100,000 simulations of {num_of_birthdays} people, there was a matching birthay in that group {count} times. This means that {num_of_birthdays} people have {round(count/100000 *100),2} % chance of having a matchimg birthday in their group.\nThat's more than you would expect!""")
 	else:
 		print("you are wrong, choose a number positive below 100")
 
@@ -93,6 +95,3 @@ def generate_birthdays(): # Main function
 
 if __name__ == "__main__":
 	generate_birthdays()
-	#with concurrent.futures.ProcessPoolExecutor() as executor:
-	#	Executors = executor.submit(generate_birthdays)
-#	print(f"the time is : {timeit.timeit(generate_birthdays(), number=1)}")
