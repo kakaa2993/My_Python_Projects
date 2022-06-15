@@ -47,10 +47,16 @@ def main():
 
 	# take input from the user
 	Message = input("> ")
-	if Message=='':
-		print("You should write something as a missage to display with the bitmap! " )
-		sys.exit()
 
+	# Print the error message and ask again if the user want to play
+	if Message =='':
+		print("You should write something as a missage to display with the bitmap! " )
+		#print("Do you want to try again?(yes/no) : ")
+		#player_answer = input("> ")
+		#if player_answer.lower() == "yes" or player_answer.lower() == "y":
+		main()
+		#else:
+		#	sys.exit()
 	#replace the stars with the inputs
 	ListOfBitmap =  bitmap.split("/n")
 	for line in ListOfBitmap:
@@ -61,6 +67,12 @@ def main():
 			else:
 				ListOfNewBitmap.append(Message[ i % len(Message)])
 	print("".join(ListOfNewBitmap))
-
+	print("Do you want to try again?(yes/no) : ")
+		player_answer = input("> ").lower()
+		if player_answer == "yes" or player_answer == "y":
+			main()
+		else:
+			sys.exit()
 if __name__== '__main__':
 	main()
+	
