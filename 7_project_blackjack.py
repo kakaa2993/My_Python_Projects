@@ -70,7 +70,6 @@ def main(Money=5000):
 	while True: # Main loop
 		keys =  [i for i in list_of_all_cards.keys()]
 
-
 		#DEALER.................................................
 		print("")
 		print("DEALER : ???")
@@ -80,7 +79,7 @@ def main(Money=5000):
 		DEALER_card_2 = random.choice(keys)
 		DEALER = list_of_all_cards[DEALER_card_1] + list_of_all_cards[DEALER_card_2]
 
-		#print the cards:
+		#print the cards of the dealer
 		D_card1, D_card2 = cards_generator("##"), cards_generator(DEALER_card_2)
 
 		for row in zip(D_card1, D_card2):
@@ -100,17 +99,17 @@ def main(Money=5000):
 
 
 
-		#print the cards:
+		# Print the cards of the player
 		P_card1, P_card2 = cards_generator(PLAYER_card_1), cards_generator(PLAYER_card_2)
 
 		for row in zip(P_card1, P_card2):
 			line_in_card_1, line_in_card_2 = row
 			print(str(line_in_card_1)," ",str(line_in_card_2))
 
-		# the player choice and check if the player got 21 point
+		# The player choice and check if the player got 21 point
 		print(" ")
 		if PLAYER == 21:
-			print("You won ${}!".format(Bet*2))
+			print("You win $ {} !!!".format(Bet*2))
 			Money = Money + (Bet*2)
 			print("Your Money = {}".format(Money))
 			main(Money)
@@ -147,7 +146,7 @@ def main(Money=5000):
 
 			print(PLAYER)
 			if PLAYER == 21:
-				print("You won ${}!".format(Bet*2))
+				print("You win $ {} !!!".format(Bet*2))
 				Money = Money + (Bet*2)
 				print("Your Money = {}".format(Money))
 				main(Money)
@@ -188,7 +187,7 @@ def main(Money=5000):
 
 			print(PLAYER)
 			if PLAYER == 21:
-				print("You won ${}!".format(Bet*2))
+				print("You win $ {} !!!".format(Bet*2))
 				Money = Money + (Bet*2)
 				print("Your Money = {}".format(Money))
 				main(Money)
@@ -229,7 +228,7 @@ def main(Money=5000):
 
 			print(PLAYER)
 			if PLAYER == 21:
-				print("You won ${}!".format(Bet*2))
+				print("You win $ {} !!!".format(Bet*2))
 				Money = Money + (Bet*2)
 				print("Your Money = {}".format(Money))
 				main(Money)
@@ -270,7 +269,7 @@ def main(Money=5000):
 
 			print(PLAYER)
 			if PLAYER == 21:
-				print("You won ${}!".format(Bet*2))
+				print("You win $ {} !!!".format(Bet*2))
 				Money = Money + (Bet*2)
 				print("Your Money = {}".format(Money))
 				main(Money)
