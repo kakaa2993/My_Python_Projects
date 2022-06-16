@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 import random
 import art
 import game_data
@@ -20,11 +18,16 @@ def play_game(bio1, bio2):
     print(art.vs)
     print(f"Against B : {bio2['name']}, a {bio2['description']}, from {bio2['country']}")
     option = input("Who has more followers ? Type 'A' or 'B' : ")
+    option = option.strip().upper()
     return option
+
+
 
 def correct_option(bio1, bio2):
     if bio1['follower_count'] > bio2['follower_count']:
+        print("A is the correct answer")
         return 'A'
+    print("B is the correct answer") 
     return 'B'
 
 def main():
@@ -50,9 +53,12 @@ def main():
             print(f'Sorry, that\'s wrong, Final Score : {score_card}')
             is_game_play = False
 
-    
-
-
+    # Ask the player if he want to play again
+    replay = input("Do you want to play again? [yes('y') or no('n')]: ")
+    if replay.lower() == "yes" or replay.lower() == "y":
+        main()
+    else:
+        print()
+        print(" Thank you for playing ".center(80, "."))
 if __name__ == '__main__':
     main()
-    
