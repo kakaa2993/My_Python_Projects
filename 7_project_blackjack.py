@@ -128,15 +128,11 @@ def main(Money=5000):
 		if PLAYER_answer == "s" or PLAYER_answer == "stand":
 			#DEALER.................................................
 			print("")
-			print("DEALER : ???")
+			print(f"DEALER : {DEALER}")
 			print("")
 
-			DEALER_card_1 = random.choice(keys)
-			DEALER_card_2 = random.choice(keys)
-			DEALER = list_of_all_cards[DEALER_card_1] + list_of_all_cards[DEALER_card_2]
-
 			#print the cards of the dealer
-			D_card1, D_card2 = cards_generator("##"), cards_generator(DEALER_card_2)
+			D_card1, D_card2 = cards_generator([DEALER_card_1), cards_generator(DEALER_card_2)
 
 			for row in zip(D_card1, D_card2):
 				line_in_card_1, line_in_card_2 = row
