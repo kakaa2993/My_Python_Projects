@@ -120,6 +120,41 @@ def main(Money=5000):
 
 		PLAYER_answer = input("> ").strip().lower()
 
+
+
+
+
+		# Add the stand function
+		if PLAYER_answer == "s" or PLAYER_answer == "stand":
+			#DEALER.................................................
+			print("")
+			print("DEALER : ???")
+			print("")
+
+			DEALER_card_1 = random.choice(keys)
+			DEALER_card_2 = random.choice(keys)
+			DEALER = list_of_all_cards[DEALER_card_1] + list_of_all_cards[DEALER_card_2]
+
+			#print the cards of the dealer
+			D_card1, D_card2 = cards_generator("##"), cards_generator(DEALER_card_2)
+
+			for row in zip(D_card1, D_card2):
+				line_in_card_1, line_in_card_2 = row
+				print(str(line_in_card_1)," ",str(line_in_card_2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
 			print("")
 
@@ -174,7 +209,7 @@ def main(Money=5000):
 
 			#PLAYER...............................................
 			PLAYER_card_4 = random.choice(keys)
-			PLAYER =PLAYER + list_of_all_cards[PLAYER_card_4] 
+			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_4] 
 
 			P_card1, P_card2, P_card3, P_card4= cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4)
 			print("")
