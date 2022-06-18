@@ -51,7 +51,7 @@ def cards_generator(card):
 Money = 5000
 
 def main(Money=5000):
-
+	print()
 	print(f"Money : {Money}")
 	Bet = input("""How much do you want to bet? (1-5000, or QUIT)\n> """)
 
@@ -88,9 +88,9 @@ def main(Money=5000):
 
 
 		#PLAYER...............................................
-		keys =  [i for i in list_of_all_cards.keys()]
-		PLAYER_card_1 = random.choice(keys)
-		PLAYER_card_2 = random.choice(keys)
+		keys_ =  [i for i in list_of_all_cards.keys()]
+		PLAYER_card_1 = random.choice(keys_)
+		PLAYER_card_2 = random.choice(keys_)
 		PLAYER = list_of_all_cards[PLAYER_card_1] + list_of_all_cards[PLAYER_card_2]
 
 		print("")
@@ -151,16 +151,32 @@ def main(Money=5000):
 
 
 			# Do the comparision between the DEALER and the PLAYER
-			if abs(PLAYER - 21) > abs(DEALER - 21):
-				print("Bust")
-                                Money = Money -  (Bet*2)
-                                print(" Money : {} ".format(Money))
-                                main(Money)
+			if DEALER >= 17:
+				if abs(PLAYER - 21) > abs(DEALER - 21):
+					print("Bust")
+                                	Money = Money -  (Bet*2)
+                                	print(" Money : {} ".format(Money))
+	                                main(Money)
+				else:
+					print("You win $ {} !!!".format(Bet*2))
+                        	        Money = Money + (Bet*2)
+                                	print("Your Money = {}".format(Money))
+                                	main(Money) 
 			else:
-				print("You win $ {} !!!".format(Bet*2))
-                                Money = Money + (Bet*2)
-                                print("Your Money = {}".format(Money))
-                                main(Money) 
+				D_card3 = random.choice(keys)
+	                        DEALER = DEALER + list_of_all_cards[PLAYER_card_3] 
+				
+				D_card1, D_card2 = cards_generator([DEALER_card_1), cards_generator(DEALER_card_2)
+
+				
+        	                P_card1, P_card2, P_card3= cards_generator(PLAYER_card_1), cards_generator(PLAYER_card_2), cards_generator(PLAYER_card_3)
+                	        print("")
+                        	print("PLAYER: {}".format(PLAYER))
+                        	print("")
+
+                        	for row in zip(P_card1, P_card2, P_card3):
+                        	        line_in_card_1, line_in_card_2, line_in_card_3 = row
+                                	print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
 
 
 
@@ -185,7 +201,7 @@ def main(Money=5000):
 
 
 			#PLAYER...............................................
-			PLAYER_card_3 = random.choice(keys)
+			PLAYER_card_3 = random.choice(keys_)
 			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_3] 
 
 			P_card1, P_card2, P_card3= cards_generator(PLAYER_card_1), cards_generator(PLAYER_card_2), cards_generator(PLAYER_card_3)
@@ -226,7 +242,7 @@ def main(Money=5000):
 
 
 			#PLAYER...............................................
-			PLAYER_card_4 = random.choice(keys)
+			PLAYER_card_4 = random.choice(keys_)
 			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_4] 
 
 			P_card1, P_card2, P_card3, P_card4= cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4)
@@ -267,7 +283,7 @@ def main(Money=5000):
 
 
 			#PLAYER...............................................
-			PLAYER_card_5 = random.choice(keys)
+			PLAYER_card_5 = random.choice(keys_)
 			PLAYER =PLAYER + list_of_all_cards[PLAYER_card_5] 
 
 			P_card1, P_card2, P_card3, P_card4, P_card5 = cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4),cards_generator(PLAYER_card_5)
@@ -308,7 +324,7 @@ def main(Money=5000):
 
 
 			#PLAYER...............................................
-			PLAYER_card_6 = random.choice(keys)
+			PLAYER_card_6 = random.choice(keys_)
 			PLAYER =PLAYER + list_of_all_cards[PLAYER_card_6] 
 
 			P_card1, P_card2, P_card3, P_card4, P_card5, P_card6= cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4),cards_generator(PLAYER_card_5),cards_generator(PLAYER_card_6)
