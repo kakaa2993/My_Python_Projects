@@ -151,7 +151,16 @@ def main(Money=5000):
 
 
 			# Do the comparision between the DEALER and the PLAYER
-			
+			if abs(PLAYER - 21) > abs(DEALER - 21):
+				print("Bust")
+                                Money = Money -  (Bet*2)
+                                print(" Money : {} ".format(Money))
+                                main(Money)
+			else:
+				print("You win $ {} !!!".format(Bet*2))
+                                Money = Money + (Bet*2)
+                                print("Your Money = {}".format(Money))
+                                main(Money) 
 
 
 
