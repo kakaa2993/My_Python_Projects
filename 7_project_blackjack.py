@@ -115,7 +115,6 @@ def main(Money=5000):
 			main(Money)
 
 
-		#card 3
 		print("(H)it, (S)tand, (D)ouble, down")
 
 		PLAYER_answer = input("> ").strip().lower()
@@ -138,6 +137,21 @@ def main(Money=5000):
 				line_in_card_1, line_in_card_2 = row
 				print(str(line_in_card_1)," ",str(line_in_card_2))
 
+			print("")
+			print("PLAYER: {}".format(PLAYER))
+			print("")
+
+
+
+			# Print the cards of the player
+
+			for row in zip(P_card1, P_card2):
+				line_in_card_1, line_in_card_2 = row
+				print(str(line_in_card_1)," ",str(line_in_card_2))
+
+
+			# Do the comparision between the DEALER and the PLAYER
+			
 
 
 
@@ -148,8 +162,7 @@ def main(Money=5000):
 
 
 
-
-
+		#card 3
 
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
 			print("")
