@@ -163,21 +163,20 @@ def main(Money=5000):
                                 	print("Your Money = {}".format(Money))
                                 	main(Money) 
 			else:
-				D_card3 = random.choice(keys)
-	                        DEALER = DEALER + list_of_all_cards[PLAYER_card_3] 
+				DEALER_card_3 = random.choice(keys)
+	                        DEALER = DEALER + list_of_all_cards[DEALER_card_3]
 				
-				D_card1, D_card2 = cards_generator([DEALER_card_1), cards_generator(DEALER_card_2)
+				#DEALER.................................................
+				print("")
+				print(f"DEALER : {DEALER}")
+				print("")
 
-				
-        	                P_card1, P_card2, P_card3= cards_generator(PLAYER_card_1), cards_generator(PLAYER_card_2), cards_generator(PLAYER_card_3)
-                	        print("")
-                        	print("PLAYER: {}".format(PLAYER))
-                        	print("")
+				#print the cards of the dealer
+				D_card1, D_card2, D_card3 = cards_generator([DEALER_card_1), cards_generator(DEALER_card_2), cards_generator(DEALER_card_3)
 
-                        	for row in zip(P_card1, P_card2, P_card3):
-                        	        line_in_card_1, line_in_card_2, line_in_card_3 = row
-                                	print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
-
+				for row in zip(D_card1, D_card2, D_card3):
+					line_in_card_1, line_in_card_2, line_in_card_3 = row
+					print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
 
 
 
