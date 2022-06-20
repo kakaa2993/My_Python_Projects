@@ -216,11 +216,11 @@ def main(Money=5000):
 					print("")
 
 	                                # Print the cards of the dealer
-        	                        D_card1, D_card2, D_card3, D_card4 = cards_generator(DEALER_card_1), cards_generator(DEALER_card_2), cards_generator(DEALER_card_3)
+        	                        D_card1, D_card2, D_card3, D_card4 = cards_generator(DEALER_card_1), cards_generator(DEALER_card_2), cards_generator(DEALER_card_3),cards_generator(DEALER_card_4)
 	
-        	                        for row in zip(D_card1, D_card2, D_card3):
-                	                        line_in_card_1, line_in_card_2, line_in_card_3 = row
-                        	                print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
+        	                        for row in zip(D_card1, D_card2, D_card3, D_card4):
+                	                        line_in_card_1, line_in_card_2, line_in_card_3, line_in_card_4 = row
+                        	                print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4))
 
                                 	# PLAYER ...............................................
 	                                print("")
@@ -234,7 +234,20 @@ def main(Money=5000):
                 	                for row in zip(P_card1, P_card2):
                         	                line_in_card_1, line_in_card_2 = row
                                 	        print(str(line_in_card_1)," ",str(line_in_card_2))
+					
 
+
+					if DEALER >= 17:
+                                        	if abs(PLAYER - 21) > abs(DEALER - 21):
+                                                	print("Bust")
+                                                	Money = Money -  (Bet*2)
+	                                                print(" Money : {} ".format(Money))
+        	                                        main(Money)
+						else:
+                                                	print("You win $ {} !!!".format(Bet*2))
+                                                	Money = Money + (Bet*2)
+	                                                print("Your Money = {}".format(Money))
+	                                                main(Money) 
 
 
 
