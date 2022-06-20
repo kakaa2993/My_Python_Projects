@@ -124,7 +124,7 @@ def main(Money=5000):
 #---------------------------------------------------------------------------------------------------------------------------------------
 
 		# Add the stand function
-		if PLAYER_answer == "s" or PLAYER_answer == "stand":
+		if PLAYER_answer.lower() == "s" or PLAYER_answer == "stand":
 			#DEALER.................................................
 			print("")
 			print(f"DEALER : {DEALER}")
@@ -165,20 +165,45 @@ def main(Money=5000):
 			else:
 				DEALER_card_3 = random.choice(keys)
 	                        DEALER = DEALER + list_of_all_cards[DEALER_card_3]
-				
-				#DEALER.................................................
+
+				# DEALER.................................................
 				print("")
 				print(f"DEALER : {DEALER}")
 				print("")
 
-				#print the cards of the dealer
+				# Print the cards of the dealer
 				D_card1, D_card2, D_card3 = cards_generator([DEALER_card_1), cards_generator(DEALER_card_2), cards_generator(DEALER_card_3)
 
 				for row in zip(D_card1, D_card2, D_card3):
 					line_in_card_1, line_in_card_2, line_in_card_3 = row
 					print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
+				
+				# PLAYER ...............................................
+				print("")
+	                        print("PLAYER: {}".format(PLAYER))
+        	                print("")
 
 
+
+                	        # Print the cards of the player
+
+				for row in zip(P_card1, P_card2):
+					line_in_card_1, line_in_card_2 = row
+					print(str(line_in_card_1)," ",str(line_in_card_2))
+
+				
+
+				if DEALER >= 17:
+	                                if abs(PLAYER - 21) > abs(DEALER - 21):
+        	                                print("Bust")
+                	                        Money = Money -  (Bet*2)
+                        	                print(" Money : {} ".format(Money))
+                                	        main(Money)
+                 	               else:
+                        	                print("You win $ {} !!!".format(Bet*2))
+                                	        Money = Money + (Bet*2)
+                                        	print("Your Money = {}".format(Money))
+                                        	main(Money) 
 
 
 
