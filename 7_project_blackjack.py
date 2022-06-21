@@ -124,7 +124,7 @@ def main(Money=5000):
 #---------------------------------------------------------------------------------------------------------------------------------------
 
 		# Add the stand function
-		if PLAYER_answer.lower() == "s" or PLAYER_answer.lowrr() == "stand":
+		if PLAYER_answer == "s" or PLAYER_answer == "stand":
 			#DEALER.................................................
 			print("")
 			print(f"DEALER : {DEALER}")
