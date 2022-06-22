@@ -137,6 +137,8 @@ def main(Money=5000):
 				line_in_card_1, line_in_card_2 = row
 				print(str(line_in_card_1)," ",str(line_in_card_2))
 
+
+			# Player...............................................
 			print("")
 			print("PLAYER: {}".format(PLAYER))
 			print("")
