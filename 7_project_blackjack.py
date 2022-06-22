@@ -120,7 +120,7 @@ def main(Money=5000):
 		PLAYER_answer = input("> ").strip().lower()
 
 
-
+		# Cards 3
 #---------------------------------------------------------------------------------------------------------------------------------------
 
 		# Add the stand function
@@ -251,7 +251,6 @@ def main(Money=5000):
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------------
-		#card 3
 
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
 			print("")
@@ -449,7 +448,6 @@ def main(Money=5000):
 
 #---------------------------------------------------------------------------------------------------------------------------------------------
 
-		#card 5
 
 		PLAYER_answer = input("> ").strip().lower()
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
@@ -488,8 +486,21 @@ def main(Money=5000):
 				print(" Money : {} ".format(Money))
 				main(Money)
 
-		# card 5
+		# card 4
 		print("(H)it, (S)tand, (D)ouble, down")
+
+		# stand functionality?
+
+
+
+
+
+
+
+
+
+
+
 
 
 		PLAYER_answer = input("> ").strip().lower()
@@ -529,8 +540,18 @@ def main(Money=5000):
 				print(" Money : {} ".format(Money))
 				main(Money)
 
-		# card 6
+		# cards 5
 		print("(H)it, (S)tand, (D)ouble, down")
+
+
+		# stand functionality?
+
+
+
+
+
+
+
 
 
 		PLAYER_answer = input("> ").strip().lower()
