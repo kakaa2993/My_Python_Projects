@@ -125,6 +125,7 @@ def main(Money=5000):
 
 		# Add the stand function
 		if PLAYER_answer == "s" or PLAYER_answer == "stand":
+
 			#DEALER.................................................
 			print("")
 			print(f"DEALER : {DEALER}")
@@ -181,6 +182,7 @@ def main(Money=5000):
 					print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
 				
 				# PLAYER ...............................................
+
 				print()
 				print("PLAYER: {}".format(PLAYER))
 				print()
@@ -213,6 +215,7 @@ def main(Money=5000):
 					DEALER = DEALER + list_of_all_cards[DEALER_card_4]
 					
 					# DEALER.................................................
+
 					print("")
 					print(f"DEALER : {DEALER}")
 					print("")
@@ -225,6 +228,7 @@ def main(Money=5000):
 						print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4))
 
 		                        # PLAYER ...............................................
+
 					print("")
 					print("PLAYER: {}".format(PLAYER))
 					print("")
@@ -258,6 +262,7 @@ def main(Money=5000):
 			print("")
 
 			#DEALER.................................................
+
 			print("DEALER : ???")
 			print("")
 			for row in zip(D_card1, D_card2):
@@ -266,6 +271,7 @@ def main(Money=5000):
 
 
 			#PLAYER...............................................
+
 			PLAYER_card_3 = random.choice(keys_)
 			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_3] 
 
@@ -300,7 +306,9 @@ def main(Money=5000):
 
 		# Add the stand function
 		if PLAYER_answer == "s" or PLAYER_answer == "stand":
+
 			#DEALER.................................................
+
 			print("")
 			print(f"DEALER : {DEALER}")
 			print("")
