@@ -312,6 +312,202 @@ def main(Money=5000):
 				print(str(line_in_card_1)," ",str(line_in_card_2))
 
 			#PLAYER...............................................
+
+			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_3] 
+
+			print("")
+			print("PLAYER: {}".format(PLAYER))
+			print("")
+
+			# Print the cards of the player
+
+			P_card1, P_card2, P_card3 = cards_generator(PLAYER_card_1), cards_generator(PLAYER_card_2), cards_generator(PLAYER_card_3)
+
+			for row in zip(P_card1, P_card2, P_card3):
+				line_in_card_1, line_in_card_2, line_in_card_3 = row
+				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
+
+			print(PLAYER)
+
+
+			# Do the comparision between the DEALER and the PLAYER
+			if DEALER >= 17:
+				if abs(PLAYER - 21) > abs(DEALER - 21):
+					print("Bust")
+					Money = Money - (Bet*2)
+					print(" Money : {} ".format(Money))
+					main(Money)
+				else:
+					print("You win $ {} !!!".format(Bet*2))
+					Money = Money + (Bet*2)
+					print("Your Money = {}".format(Money))
+					main(Money) 
+			else:
+				DEALER_card_3 = random.choice(keys)
+				DEALER = DEALER + list_of_all_cards[DEALER_card_3]
+
+				# DEALER.................................................
+				print("")
+				print(f"DEALER : {DEALER}")
+				print("")
+
+				# Print the cards of the dealer
+				D_card1, D_card2, D_card3 = cards_generator(DEALER_card_1), cards_generator(DEALER_card_2), cards_generator(DEALER_card_3)
+
+				for row in zip(D_card1, D_card2, D_card3):
+					line_in_card_1, line_in_card_2, line_in_card_3 = row
+					print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
+				
+
+				#PLAYER...............................................
+				PLAYER = PLAYER + list_of_all_cards[PLAYER_card_3] 
+
+				print("")
+				print("PLAYER: {}".format(PLAYER))
+				print("")
+
+				# Print the cards of the player
+
+				P_card1, P_card2, P_card3 = cards_generator(PLAYER_card_1), cards_generator(PLAYER_card_2), cards_generator(PLAYER_card_3)
+
+				for row in zip(P_card1, P_card2, P_card3):
+					line_in_card_1, line_in_card_2, line_in_card_3 = row
+					print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
+
+				print(PLAYER)
+
+
+				if DEALER >= 17:
+					if abs(PLAYER - 21) > abs(DEALER - 21):
+						print("Bust")
+						Money = Money - (Bet*2)
+						print(" Money : {} ".format(Money))
+						main(Money)
+					else:
+						print("You win $ {} !!!".format(Bet*2))
+						Money = Money + (Bet*2)
+						print("Your Money = {}".format(Money))
+						main(Money) 
+
+
+				else:
+					DEALER_card_4 = random.choice(keys)
+					DEALER = DEALER + list_of_all_cards[DEALER_card_4]
+
+					# DEALER.................................................
+					print("")
+					print(f"DEALER : {DEALER}")
+					print("")
+
+					# Print the cards of the dealer
+					D_card1, D_card2, D_card3, D_card4 = cards_generator(DEALER_card_1), cards_generator(DEALER_card_2), cards_generator(DEALER_card_3),cards_generator(DEALER_card_4)
+
+					for row in zip(D_card1, D_card2, D_card3, D_card4):
+						line_in_card_1, line_in_card_2, line_in_card_3, line_in_card_4 = row
+						print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4))
+
+
+					# PLAYER...............................................
+					PLAYER = PLAYER + list_of_all_cards[PLAYER_card_3] 
+
+					print("")
+					print("PLAYER: {}".format(PLAYER))
+					print("")
+
+					# Print the cards of the player
+
+					P_card1, P_card2, P_card3 = cards_generator(PLAYER_card_1), cards_generator(PLAYER_card_2), cards_generator(PLAYER_card_3)
+
+					for row in zip(P_card1, P_card2, P_card3):
+						line_in_card_1, line_in_card_2, line_in_card_3 = row
+						print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
+
+					print(PLAYER)
+
+	
+
+					if DEALER >= 17:
+						if abs(PLAYER - 21) > abs(DEALER - 21):
+							print("Bust")
+							Money = Money -  (Bet*2)
+							print(" Money : {} ".format(Money))
+							main(Money)
+						else:
+							print("You win $ {} !!!".format(Bet*2))
+							Money = Money + (Bet*2)
+							print("Your Money = {}".format(Money))
+							main(Money) 
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+		PLAYER_answer = input("> ").strip().lower()
+		if PLAYER_answer == "h" or PLAYER_answer == "hit":
+			print("")
+
+			#DEALER.................................................
+			print("DEALER : ???")
+			print("")
+			for row in zip(D_card1, D_card2):
+				line_in_card_1, line_in_card_2 = row
+				print(str(line_in_card_1)," ",str(line_in_card_2))
+
+
+			#PLAYER...............................................
+			PLAYER_card_4 = random.choice(keys_)
+			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_4] 
+
+			P_card1, P_card2, P_card3, P_card4= cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4)
+			print("")
+			print("PLAYER: {}".format(PLAYER))
+			print("")
+
+			for row in zip(P_card1,P_card2, P_card3, P_card4):
+				line_in_card_1, line_in_card_2, line_in_card_3, line_in_card_4= row
+				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4))
+
+			print(PLAYER)
+			if PLAYER == 21:
+				print("You win $ {} !!!".format(Bet*2))
+				Money = Money + (Bet*2)
+				print("Your Money = {}".format(Money))
+				main(Money)
+			elif PLAYER > 21:
+				print("Bust")
+				Money = Money -  (Bet*2)
+				print(" Money : {} ".format(Money))
+				main(Money)
+
+		# card 4
+		print("(H)it, (S)tand, (D)ouble, down")
+
+		# stand functionality?
+
+
+
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------
+
+		# Add the stand function
+		if PLAYER_answer == "s" or PLAYER_answer == "stand":
+			#DEALER.................................................
+			print("")
+			print(f"DEALER : {DEALER}")
+			print("")
+
+			#print the cards of the dealer
+			D_card1, D_card2 = cards_generator(DEALER_card_1), cards_generator(DEALER_card_2)
+
+
+			for row in zip(D_card1, D_card2):
+				line_in_card_1, line_in_card_2 = row
+				print(str(line_in_card_1)," ",str(line_in_card_2))
+
+			#PLAYER...............................................
 			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_3] 
 
 			P_card1, P_card2, P_card3 = cards_generator(PLAYER_card_1), cards_generator(PLAYER_card_2), cards_generator(PLAYER_card_3)
@@ -447,52 +643,6 @@ def main(Money=5000):
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-		PLAYER_answer = input("> ").strip().lower()
-		if PLAYER_answer == "h" or PLAYER_answer == "hit":
-			print("")
-
-			#DEALER.................................................
-			print("DEALER : ???")
-			print("")
-			for row in zip(D_card1, D_card2):
-				line_in_card_1, line_in_card_2 = row
-				print(str(line_in_card_1)," ",str(line_in_card_2))
-
-
-			#PLAYER...............................................
-			PLAYER_card_4 = random.choice(keys_)
-			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_4] 
-
-			P_card1, P_card2, P_card3, P_card4= cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4)
-			print("")
-			print("PLAYER: {}".format(PLAYER))
-			print("")
-
-			for row in zip(P_card1,P_card2, P_card3, P_card4):
-				line_in_card_1, line_in_card_2, line_in_card_3, line_in_card_4= row
-				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4))
-
-			print(PLAYER)
-			if PLAYER == 21:
-				print("You win $ {} !!!".format(Bet*2))
-				Money = Money + (Bet*2)
-				print("Your Money = {}".format(Money))
-				main(Money)
-			elif PLAYER > 21:
-				print("Bust")
-				Money = Money -  (Bet*2)
-				print(" Money : {} ".format(Money))
-				main(Money)
-
-		# card 4
-		print("(H)it, (S)tand, (D)ouble, down")
-
-		# stand functionality?
-
-
-
 
 
 
