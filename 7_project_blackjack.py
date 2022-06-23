@@ -52,6 +52,8 @@ Money = 5000
 
 def main(Money=5000):
 	print()
+	print("new game".center(80,"/")
+	print()
 	print(f"Money : {Money}")
 	Bet = input("""How much do you want to bet? (1-5000, or QUIT)\n> """)
 
