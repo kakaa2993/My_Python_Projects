@@ -469,16 +469,17 @@ def main(Money=5000):
 			PLAYER_card_4 = random.choice(keys_)
 			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_4] 
 
-			P_card1, P_card2, P_card3, P_card4= cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4)
+			P_card1, P_card2, P_card3, P_card4 = cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4)
 			print("")
 			print("PLAYER: {}".format(PLAYER))
 			print("")
 
 			for row in zip(P_card1,P_card2, P_card3, P_card4):
-				line_in_card_1, line_in_card_2, line_in_card_3, line_in_card_4= row
+				line_in_card_1, line_in_card_2, line_in_card_3, line_in_card_4 = row
 				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4))
 
 			print(PLAYER)
+
 			if PLAYER == 21:
 				print("You win $ {} !!!".format(Bet*2))
 				Money = Money + (Bet*2)
@@ -626,17 +627,14 @@ def main(Money=5000):
 					print("PLAYER: {}".format(PLAYER))
 					print("")
 
+					# Print the cards of the player
+
 					for row in zip(P_card1, P_card2, P_card3):
 						line_in_card_1, line_in_card_2, line_in_card_3 = row
 						print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
 
 					print(PLAYER)
 
-					# Print the cards of the player
-
-					for row in zip(P_card1, P_card2):
-						line_in_card_1, line_in_card_2 = row
-						print(str(line_in_card_1)," ",str(line_in_card_2))
 
 
 					if DEALER >= 17:
