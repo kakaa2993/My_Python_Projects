@@ -117,12 +117,15 @@ def main(Money=5000):
 			main(Money)
 
 
-		print("(H)it, (S)tand, (D)ouble, down")
 
-		PLAYER_answer = input("> ").strip().lower()
 
 
 		# Cards 3
+
+		print("(H)it, (S)tand, (D)ouble, down")
+		PLAYER_answer = input("> ").strip().lower()
+
+
 #---------------------------------------------------------------------------------------------------------------------------------------
 
 		# Add the stand function
@@ -261,6 +264,7 @@ def main(Money=5000):
 #---------------------------------------------------------------------------------------------------------------------------------------------
 
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
+
 			print("")
 
 			#DEALER.................................................
@@ -299,6 +303,7 @@ def main(Money=5000):
 				main(Money)
 
 		#card 4
+
 		print("(H)it, (S)tand, (D)ouble, down")
 		PLAYER_answer = input("> ").strip().lower()
 
@@ -453,11 +458,15 @@ def main(Money=5000):
 
 
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
-			print("")
 
 			#DEALER.................................................
+
+			print("")
 			print("DEALER : ???")
 			print("")
+
+			# Print the cards of the dealer
+
 			for row in zip(D_card1, D_card2):
 				line_in_card_1, line_in_card_2 = row
 				print(str(line_in_card_1)," ",str(line_in_card_2))
@@ -467,11 +476,13 @@ def main(Money=5000):
 			PLAYER_card_4 = random.choice(keys_)
 			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_4] 
 
-			P_card1, P_card2, P_card3, P_card4 = cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4)
 			print("")
 			print("PLAYER: {}".format(PLAYER))
 			print("")
 
+			# Print the cards of the player
+
+			P_card1, P_card2, P_card3, P_card4 = cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4)
 			for row in zip(P_card1,P_card2, P_card3, P_card4):
 				line_in_card_1, line_in_card_2, line_in_card_3, line_in_card_4 = row
 				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4))
@@ -489,14 +500,14 @@ def main(Money=5000):
 				print(" Money : {} ".format(Money))
 				main(Money)
 
+
+
+
+
 		# card 4
+
 		print("(H)it, (S)tand, (D)ouble, down")
 		PLAYER_answer = input("> ").strip().lower()
-
-		# stand functionality?
-
-
-
 
 
 
@@ -566,7 +577,6 @@ def main(Money=5000):
 
 				#PLAYER............................................
 
-
 				print("")
 				print("PLAYER: {}".format(PLAYER))
 				print("")
@@ -602,11 +612,13 @@ def main(Money=5000):
 					DEALER = DEALER + list_of_all_cards[DEALER_card_4]
 
 					# DEALER.................................................
+
 					print("")
 					print(f"DEALER : {DEALER}")
 					print("")
 
 					# Print the cards of the dealer
+
 					D_card1, D_card2, D_card3, D_card4 = cards_generator(DEALER_card_1), cards_generator(DEALER_card_2), cards_generator(DEALER_card_3),cards_generator(DEALER_card_4)
 
 					for row in zip(D_card1, D_card2, D_card3, D_card4):
@@ -654,28 +666,34 @@ def main(Money=5000):
 
 
 
-
-
 		if PLAYER_answer == "h" or PLAYER_answer=="hit":
-			print("")
 
 			#DEALER.................................................
+
+			print("")
 			print("DEALER : ???")
 			print("")
+
+			# Print the cards of the dealer
+
 			for row in zip(D_card1,D_card2):
 				line_in_card_1, line_in_card_2= row
 				print(str(line_in_card_1)," ",str(line_in_card_2))
 
 
 			#PLAYER...............................................
+
 			PLAYER_card_5 = random.choice(keys_)
 			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_5] 
 
-			P_card1, P_card2, P_card3, P_card4, P_card5 = cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4),cards_generator(PLAYER_card_5)
 			print("")
 			print("PLAYER: {}".format(PLAYER))
 			print("")
 
+
+			# Print the cards of the player
+
+			P_card1, P_card2, P_card3, P_card4, P_card5 = cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4),cards_generator(PLAYER_card_5)
 			for row in zip(P_card1,P_card2, P_card3, P_card4, P_card5):
 				line_in_card_1, line_in_card_2, line_in_card_3, line_in_card_4, line_in_card_5 = row
 				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4)," ",str( line_in_card_5))
