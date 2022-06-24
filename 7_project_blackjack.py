@@ -26,6 +26,7 @@ print("""Blackjack, by BELAMIRI Zakarya kakaa2993@gmail.com
 def cards_generator(card):
 
 	#card number 01:
+
 	char = ["♥","♦","♠"]
 	list_1 = []
 
@@ -44,7 +45,6 @@ def cards_generator(card):
 		#The center of the card.
 		elif re.search(rf"{i}","[2]") != None :
 			list_1.append(f"|  {random.choice(char)}   |")
-		#print(list_1)
 	return list_1
 
 
