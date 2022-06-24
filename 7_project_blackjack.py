@@ -227,7 +227,7 @@ def main(Money=5000):
 
 					# Print the cards of the dealer
 					D_card1, D_card2, D_card3, D_card4 = cards_generator(DEALER_card_1), cards_generator(DEALER_card_2), cards_generator(DEALER_card_3),cards_generator(DEALER_card_4)
-	
+
 					for row in zip(D_card1, D_card2, D_card3, D_card4):
 						line_in_card_1, line_in_card_2, line_in_card_3, line_in_card_4 = row
 						print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4))
@@ -241,7 +241,7 @@ def main(Money=5000):
 
 
         	     		        # Print the cards of the player
-	
+
 					for row in zip(P_card1, P_card2):
 						line_in_card_1, line_in_card_2 = row
 						print(str(line_in_card_1)," ",str(line_in_card_2))
@@ -271,6 +271,8 @@ def main(Money=5000):
 
 			print("DEALER : ???")
 			print("")
+
+			# Print the cards of the dealer
 			for row in zip(D_card1, D_card2):
 				line_in_card_1, line_in_card_2 = row
 				print(str(line_in_card_1)," ",str(line_in_card_2))
@@ -281,10 +283,12 @@ def main(Money=5000):
 			PLAYER_card_3 = random.choice(keys_)
 			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_3] 
 
-			P_card1, P_card2, P_card3 = cards_generator(PLAYER_card_1), cards_generator(PLAYER_card_2), cards_generator(PLAYER_card_3)
 			print("")
 			print("PLAYER: {}".format(PLAYER))
 			print("")
+
+			# Print the cards of the player
+			P_card1, P_card2, P_card3 = cards_generator(PLAYER_card_1), cards_generator(PLAYER_card_2), cards_generator(PLAYER_card_3)
 
 			for row in zip(P_card1, P_card2, P_card3):
 				line_in_card_1, line_in_card_2, line_in_card_3 = row
