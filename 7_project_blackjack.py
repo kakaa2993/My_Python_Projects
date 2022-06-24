@@ -201,6 +201,7 @@ def main(Money=5000):
 					print(str(line_in_card_1)," ",str(line_in_card_2))
 
 
+				# Do the comparision between the DEALER and the PLAYER
 
 				if DEALER >= 17:
 					if abs(PLAYER - 21) > abs(DEALER - 21):
@@ -246,6 +247,7 @@ def main(Money=5000):
 						line_in_card_1, line_in_card_2 = row
 						print(str(line_in_card_1)," ",str(line_in_card_2))
 
+					# Do the comparision between the DEALER and the PLAYER
 
 					if DEALER >= 17:
 						if abs(PLAYER - 21) > abs(DEALER - 21):
@@ -294,6 +296,8 @@ def main(Money=5000):
 				line_in_card_1, line_in_card_2, line_in_card_3 = row
 				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
 			print(PLAYER)
+
+			# Do the comparision between the DEALER and the PLAYER
 
 			if PLAYER == 21:
 				print("You win $ {} !!!".format(Bet*2))
@@ -395,6 +399,7 @@ def main(Money=5000):
 
 				print(PLAYER)
 
+				# Do the comparision between the DEALER and the PLAYER
 
 				if DEALER >= 17:
 					if abs(PLAYER - 21) > abs(DEALER - 21):
@@ -443,6 +448,7 @@ def main(Money=5000):
 					print(PLAYER)
 
 	
+					# Do the comparision between the DEALER and the PLAYER
 
 					if DEALER >= 17:
 						if abs(PLAYER - 21) > abs(DEALER - 21):
@@ -492,6 +498,8 @@ def main(Money=5000):
 				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4))
 
 			print(PLAYER)
+
+			# Do the comparision between the DEALER and the PLAYER
 
 			if PLAYER == 21:
 				print("You win $ {} !!!".format(Bet*2))
@@ -595,8 +603,7 @@ def main(Money=5000):
 
 				print(PLAYER)
 
-				# Print the cards of the player
-
+				# Do the comparision between the DEALER and the PLAYER
 
 				if DEALER >= 17:
 					if abs(PLAYER - 21) > abs(DEALER - 21):
@@ -646,6 +653,7 @@ def main(Money=5000):
 					print(PLAYER)
 
 
+					# Do the comparision between the DEALER and the PLAYER
 
 					if DEALER >= 17:
 						if abs(PLAYER - 21) > abs(DEALER - 21):
@@ -703,6 +711,8 @@ def main(Money=5000):
 				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4)," ",str( line_in_card_5))
 
 			print(PLAYER)
+
+			# Do the comparision between the DEALER and the PLAYER
 
 			if PLAYER == 21:
 				print("You win $ {} !!!".format(Bet*2))
@@ -808,6 +818,7 @@ def main(Money=5000):
 
 				print(PLAYER)
 
+				# Do the comparision between the DEALER and the PLAYER
 
 				if DEALER >= 17:
 					if abs(PLAYER - 21) > abs(DEALER - 21):
@@ -857,6 +868,7 @@ def main(Money=5000):
 
 					print(PLAYER)
 
+					# Do the comparision between the DEALER and the PLAYER
 
 					if DEALER >= 17:
 						if abs(PLAYER - 21) > abs(DEALER - 21):
@@ -907,6 +919,9 @@ def main(Money=5000):
 				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4)," ",str( line_in_card_5)," ",str( line_in_card_6))
 
 			print(PLAYER)
+
+			# Do the comparision between the DEALER and the PLAYER
+
 			if PLAYER == 21:
 				print("You win $ {} !!!".format(Bet*2))
 				Money = Money + (Bet*2)
