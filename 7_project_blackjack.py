@@ -51,6 +51,7 @@ def cards_generator(card):
 Money = 5000
 
 def main(Money=5000):
+
 	print()
 	print("new game".center(80,"/")
 	print()
@@ -185,9 +186,8 @@ def main(Money=5000):
 				for row in zip(D_card1, D_card2, D_card3):
 					line_in_card_1, line_in_card_2, line_in_card_3 = row
 					print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
-				
-				# PLAYER ...............................................
 
+				# PLAYER ...............................................
 				print()
 				print("PLAYER: {}".format(PLAYER))
 				print()
@@ -200,7 +200,7 @@ def main(Money=5000):
 					line_in_card_1, line_in_card_2 = row
 					print(str(line_in_card_1)," ",str(line_in_card_2))
 
-				
+
 
 				if DEALER >= 17:
 					if abs(PLAYER - 21) > abs(DEALER - 21):
@@ -218,7 +218,7 @@ def main(Money=5000):
 				else:
 					DEALER_card_4 = random.choice(keys)
 					DEALER = DEALER + list_of_all_cards[DEALER_card_4]
-					
+
 					# DEALER.................................................
 
 					print("")
@@ -289,8 +289,8 @@ def main(Money=5000):
 			for row in zip(P_card1, P_card2, P_card3):
 				line_in_card_1, line_in_card_2, line_in_card_3 = row
 				print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
-
 			print(PLAYER)
+
 			if PLAYER == 21:
 				print("You win $ {} !!!".format(Bet*2))
 				Money = Money + (Bet*2)
