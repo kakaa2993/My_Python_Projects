@@ -61,8 +61,9 @@ def main(Money=5000):
 	Bet = input("""How much do you want to bet? (1-5000, or QUIT)\n> """)
 
 	# Check if the player don't want to play
-	if Bet.islower() == "quit" or Ber.islower() == "q":
-		return "Thank you for your playing"		
+	if Bet.islower() == "quit" or Bet.islower() == "q":
+		print("Thank you for your playing")
+		return None		
 
 	# Check if the player input is match with the conditions
 	if Bet.isnumeric() == True and 0 < int(Bet) <= 5000:
@@ -200,7 +201,7 @@ def main(Money=5000):
 
 
 
-                	        # Print the cards of the player
+                 # Print the cards of the player
 
 				for row in zip(P_card1, P_card2):
 					line_in_card_1, line_in_card_2 = row
@@ -267,8 +268,54 @@ def main(Money=5000):
 							print("Your Money = {}".format(Money))
 							main(Money)
 
+					else:
+						DEALER_card_5 = random.choice(keys)
+						DEALER = DEALER + list_of_all_cards[DEALER_card_5]
+
+						# DEALER.................................................
+
+						print("")
+						print(f"DEALER : {DEALER}")
+						print("")
+
+						# Print the cards of the dealer
+						D_card1, D_card2, D_card3, D_card4, D_card5 = cards_generator(DEALER_card_1), cards_generator(DEALER_card_2), cards_generator(DEALER_card_3),cards_generator(DEALER_card_4), cards_generator(DEALER_card_5)
+
+						for row in zip(D_card1, D_card2, D_card3, D_card4, D_card5):
+							line_in_card_1, line_in_card_2, line_in_card_3, line_in_card_4, line_in_card_5 = row
+							print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3)," ",str(line_in_card_4)," ",str(line_in_card_5))
+
+						# PLAYER ...............................................
+
+						print("")
+						print("PLAYER: {}".format(PLAYER))
+						print("")
 
 
+
+						
+						# Print the cards of the player
+
+						for row in zip(P_card1, P_card2):
+							line_in_card_1, line_in_card_2 = row
+							print(str(line_in_card_1)," ",str(line_in_card_2))
+
+						# Do the comparision between the DEALER and the PLAYER
+
+						if DEALER >= 17:
+							if abs(PLAYER - 21) > abs(DEALER - 21):
+								print("Bust")
+								Money = Money -  (Bet*2)
+								print(" Money : {} ".format(Money))
+								main(Money)
+							else:
+								print("You win $ {} !!!".format(Bet*2))
+								Money = Money + (Bet*2)
+								print("Your Money = {}".format(Money))
+								main(Money)
+
+
+   #fix erorr card 5 in dealer
 #---------------------------------------------------------------------------------------------------------------------------------------------
 
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
