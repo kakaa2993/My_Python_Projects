@@ -60,12 +60,16 @@ def main(Money=5000):
 	print(f"Money : {Money}")
 	Bet = input("""How much do you want to bet? (1-5000, or QUIT)\n> """)
 
+	# Check if the player don't want to play
+	if Bet.islower() == "quit" or Ber.islower() == "q":
+		return "Thank you for your playing"		
+
 	# Check if the player input is match with the conditions
 	if Bet.isnumeric() == True and 0 < int(Bet) <= 5000:
-			print(f"Bet : {Bet}")
+		print(f"Bet : {Bet}")
 	else:
-			print(" The Bet must be a number and must be bigger than Zero and smaller than 5000 !!!\n")
-			main()
+		print(" The Bet must be a number and must be bigger than Zero and smaller than 5000 !!!\n")
+		main()
 
 
 	Bet = int(Bet)
