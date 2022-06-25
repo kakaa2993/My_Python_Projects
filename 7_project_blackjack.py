@@ -315,7 +315,7 @@ def main(Money=5000):
 								main(Money)
 
 
-   #fix erorr card 5 in dealer
+   #fix erorr card 5 in dealer in all the other cards
 #---------------------------------------------------------------------------------------------------------------------------------------------
 
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
