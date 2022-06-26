@@ -203,7 +203,7 @@ def main(Money=5000):
 
 
 
-                 # Print the cards of the player
+		                 # Print the cards of the player
 
 				for row in zip(P_card1, P_card2):
 					line_in_card_1, line_in_card_2 = row
