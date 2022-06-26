@@ -79,7 +79,7 @@ def main(Money=5000):
 
 	while True: # Main loop
 		keys =  [i for i in list_of_all_cards.keys()]
-
+		print("----".center(60,"-"))
 		#DEALER.................................................
 		print("")
 		print("DEALER : ???")
@@ -138,6 +138,7 @@ def main(Money=5000):
 
 		# Add the stand function
 		if PLAYER_answer == "s" or PLAYER_answer == "stand":
+			print("----".center(60,"-"))
 
 			#DEALER.................................................
 			print("")
@@ -181,6 +182,7 @@ def main(Money=5000):
 			else:
 				DEALER_card_3 = random.choice(keys)
 				DEALER = DEALER + list_of_all_cards[DEALER_card_3]
+				print("----".center(60,"-"))
 
 				# DEALER.................................................
 				print("")
@@ -226,6 +228,7 @@ def main(Money=5000):
 				else:
 					DEALER_card_4 = random.choice(keys)
 					DEALER = DEALER + list_of_all_cards[DEALER_card_4]
+					print("----".center(60,"-"))
 
 					# DEALER.................................................
 
@@ -271,6 +274,7 @@ def main(Money=5000):
 					else:
 						DEALER_card_5 = random.choice(keys)
 						DEALER = DEALER + list_of_all_cards[DEALER_card_5]
+						print("----".center(60,"-"))
 
 						# DEALER.................................................
 
@@ -293,7 +297,7 @@ def main(Money=5000):
 
 
 
-						
+
 						# Print the cards of the player
 
 						for row in zip(P_card1, P_card2):
@@ -323,6 +327,7 @@ def main(Money=5000):
 			print("")
 
 			#DEALER.................................................
+			print("----".center(60,"-"))
 
 			print("DEALER : ???")
 			print("")
@@ -376,6 +381,7 @@ def main(Money=5000):
 		if PLAYER_answer == "s" or PLAYER_answer == "stand":
 
 			#DEALER.................................................
+			print("----".center(60,"-"))
 
 			print("")
 			print(f"DEALER : {DEALER}")
@@ -424,6 +430,7 @@ def main(Money=5000):
 				DEALER = DEALER + list_of_all_cards[DEALER_card_3]
 
 				# DEALER.................................................
+				print("----".center(60,"-"))
 				print("")
 				print(f"DEALER : {DEALER}")
 				print("")
@@ -472,6 +479,8 @@ def main(Money=5000):
 					DEALER = DEALER + list_of_all_cards[DEALER_card_4]
 
 					# DEALER.................................................
+					print("----".center(60,"-"))
+
 					print("")
 					print(f"DEALER : {DEALER}")
 					print("")
@@ -523,6 +532,7 @@ def main(Money=5000):
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
 
 			#DEALER.................................................
+			print("----".center(60,"-"))
 
 			print("")
 			print("DEALER : ???")
@@ -581,6 +591,8 @@ def main(Money=5000):
 		# Add the stand function
 		if PLAYER_answer == "s" or PLAYER_answer == "stand":
 			#DEALER.................................................
+			print("----".center(60,"-"))
+
 			print("")
 			print(f"DEALER : {DEALER}")
 			print("")
@@ -628,6 +640,8 @@ def main(Money=5000):
 				DEALER = DEALER + list_of_all_cards[DEALER_card_3]
 
 				# DEALER.................................................
+				print("----".center(60,"-"))
+
 				print("")
 				print(f"DEALER : {DEALER}")
 				print("")
@@ -638,7 +652,7 @@ def main(Money=5000):
 				for row in zip(D_card1, D_card2, D_card3):
 					line_in_card_1, line_in_card_2, line_in_card_3 = row
 					print(str(line_in_card_1)," ",str(line_in_card_2)," ",str(line_in_card_3))
-				
+
 
 				#PLAYER............................................
 
@@ -676,6 +690,7 @@ def main(Money=5000):
 					DEALER = DEALER + list_of_all_cards[DEALER_card_4]
 
 					# DEALER.................................................
+					print("----".center(60,"-"))
 
 					print("")
 					print(f"DEALER : {DEALER}")
@@ -734,6 +749,7 @@ def main(Money=5000):
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
 
 			#DEALER.................................................
+			print("----".center(60,"-"))
 
 			print("")
 			print("DEALER : ???")
@@ -794,6 +810,8 @@ def main(Money=5000):
 
 		# Add the stand function
 		if PLAYER_answer == "s" or PLAYER_answer == "stand":
+			print("----".center(60,"-"))
+
 			#DEALER.................................................
 			print("")
 			print(f"DEALER : {DEALER}")
@@ -842,6 +860,8 @@ def main(Money=5000):
 				DEALER = DEALER + list_of_all_cards[DEALER_card_3]
 
 				# DEALER.................................................
+				print("----".center(60,"-"))
+
 				print("")
 				print(f"DEALER : {DEALER}")
 				print("")
@@ -889,6 +909,8 @@ def main(Money=5000):
 					DEALER = DEALER + list_of_all_cards[DEALER_card_4]
 
 					# DEALER.................................................
+					print("----".center(60,"-"))
+
 					print("")
 					print(f"DEALER : {DEALER}")
 					print("")
@@ -947,6 +969,8 @@ def main(Money=5000):
 			print("")
 
 			#DEALER.................................................
+			print("----".center(60,"-"))
+
 			print("DEALER : ???")
 			print("")
 			for row in zip(D_card1,D_card2):
