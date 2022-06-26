@@ -61,9 +61,9 @@ def main(Money=5000):
 	Bet = input("""How much do you want to bet? (1-5000, or QUIT)\n> """)
 
 	# Check if the player don't want to play
-	if Bet.islower() == "quit" or Bet.islower() == "q":
+	if Bet.strip().lower() == "quit" or Bet.strip().lower() == "q":
 		print("Thank you for your playing")
-		return None		
+		return None
 
 	# Check if the player input is match with the conditions
 	if Bet.isnumeric() == True and 0 < int(Bet) <= 5000:
