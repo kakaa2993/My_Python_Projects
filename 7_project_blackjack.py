@@ -125,8 +125,6 @@ def main(Money=5000):
 			main(Money)
 
 
-
-
 # add the equall case ??????????????????
 
 		# Cards 3
@@ -225,6 +223,13 @@ def main(Money=5000):
 						Money = Money - (Bet*2)
 						print(" Money : {} ".format(Money))
 						main(Money)
+
+#----------------------------------------------------------------------------------------------------
+					elif abs(PLAYER - 21) == abs(DEALER - 21):
+						print("Equal")
+						print(" Money : {} ".format(Money))
+						main(Money)
+#----------------------------------------------------------------------------------------------------
 					else:
 						print("You win $ {} !!!".format(Bet*2))
 						Money = Money + (Bet*2)
@@ -272,6 +277,13 @@ def main(Money=5000):
 							Money = Money -  (Bet*2)
 							print(" Money : {} ".format(Money))
 							main(Money)
+#----------------------------------------------------------------------------------------------------
+						elif abs(PLAYER - 21) == abs(DEALER - 21):
+							print("Equal")
+							print(" Money : {} ".format(Money))
+							main(Money)
+#----------------------------------------------------------------------------------------------------
+
 						else:
 							print("You win $ {} !!!".format(Bet*2))
 							Money = Money + (Bet*2)
@@ -319,6 +331,14 @@ def main(Money=5000):
 								Money = Money -  (Bet*2)
 								print(" Money : {} ".format(Money))
 								main(Money)
+
+#----------------------------------------------------------------------------------------------------
+							elif abs(PLAYER - 21) == abs(DEALER - 21):
+								print("Equal")
+								print(" Money : {} ".format(Money))
+								main(Money)
+#----------------------------------------------------------------------------------------------------
+
 							else:
 								print("You win $ {} !!!".format(Bet*2))
 								Money = Money + (Bet*2)
@@ -369,6 +389,13 @@ def main(Money=5000):
 				Money = Money + (Bet*2)
 				print("Your Money = {}".format(Money))
 				main(Money)
+#----------------------------------------------------------------------------------------------------
+			elif abs(PLAYER - 21) == abs(DEALER - 21):
+				print("Equal")
+				print(" Money : {} ".format(Money))
+				main(Money)
+#----------------------------------------------------------------------------------------------------
+
 			elif PLAYER > 21:
 				print("Bust")
 				Money = Money -  (Bet*2)
@@ -427,6 +454,14 @@ def main(Money=5000):
 					Money = Money - (Bet*2)
 					print(" Money : {} ".format(Money))
 					main(Money)
+
+#----------------------------------------------------------------------------------------------------
+				elif abs(PLAYER - 21) == abs(DEALER - 21):
+					print("Equal")
+					print(" Money : {} ".format(Money))
+					main(Money)
+#----------------------------------------------------------------------------------------------------
+
 				else:
 					print("You win $ {} !!!".format(Bet*2))
 					Money = Money + (Bet*2)
@@ -474,6 +509,14 @@ def main(Money=5000):
 						Money = Money - (Bet*2)
 						print(" Money : {} ".format(Money))
 						main(Money)
+
+
+#----------------------------------------------------------------------------------------------------
+					elif abs(PLAYER - 21) == abs(DEALER - 21):
+						print("Equal")
+						print(" Money : {} ".format(Money))
+						main(Money)
+#----------------------------------------------------------------------------------------------------
 					else:
 						print("You win $ {} !!!".format(Bet*2))
 						Money = Money + (Bet*2)
@@ -525,6 +568,14 @@ def main(Money=5000):
 							Money = Money -  (Bet*2)
 							print(" Money : {} ".format(Money))
 							main(Money)
+
+#----------------------------------------------------------------------------------------------------
+						elif abs(PLAYER - 21) == abs(DEALER - 21):
+							print("Equal")
+							print(" Money : {} ".format(Money))
+							main(Money)
+#----------------------------------------------------------------------------------------------------
+
 						else:
 							print("You win $ {} !!!".format(Bet*2))
 							Money = Money + (Bet*2)
@@ -637,6 +688,14 @@ def main(Money=5000):
 					Money = Money - (Bet*2)
 					print(" Money : {} ".format(Money))
 					main(Money)
+
+#----------------------------------------------------------------------------------------------------
+				elif abs(PLAYER - 21) == abs(DEALER - 21):
+					print("Equal")
+					print(" Money : {} ".format(Money))
+					main(Money)
+#----------------------------------------------------------------------------------------------------
+
 				else:
 					print("You win $ {} !!!".format(Bet*2))
 					Money = Money + (Bet*2)
@@ -685,6 +744,14 @@ def main(Money=5000):
 						Money = Money - (Bet*2)
 						print(" Money : {} ".format(Money))
 						main(Money)
+
+#----------------------------------------------------------------------------------------------------
+					elif abs(PLAYER - 21) == abs(DEALER - 21):
+						print("Equal")
+						print(" Money : {} ".format(Money))
+						main(Money)
+#----------------------------------------------------------------------------------------------------
+
 					else:
 						print("You win $ {} !!!".format(Bet*2))
 						Money = Money + (Bet*2)
@@ -736,6 +803,14 @@ def main(Money=5000):
 							Money = Money -  (Bet*2)
 							print(" Money : {} ".format(Money))
 							main(Money)
+
+#----------------------------------------------------------------------------------------------------
+						elif abs(PLAYER - 21) == abs(DEALER - 21):
+							print("Equal")
+							print(" Money : {} ".format(Money))
+							main(Money)
+#----------------------------------------------------------------------------------------------------
+
 						else:
 							print("You win $ {} !!!".format(Bet*2))
 							Money = Money + (Bet*2)
@@ -857,6 +932,14 @@ def main(Money=5000):
 					Money = Money - (Bet*2)
 					print(" Money : {} ".format(Money))
 					main(Money)
+
+#----------------------------------------------------------------------------------------------------
+				elif abs(PLAYER - 21) == abs(DEALER - 21):
+					print("Equal")
+					print(" Money : {} ".format(Money))
+					main(Money)
+#----------------------------------------------------------------------------------------------------
+
 				else:
 					print("You win $ {} !!!".format(Bet*2))
 					Money = Money + (Bet*2)
@@ -904,6 +987,14 @@ def main(Money=5000):
 						Money = Money - (Bet*2)
 						print(" Money : {} ".format(Money))
 						main(Money)
+
+
+#----------------------------------------------------------------------------------------------------
+					elif abs(PLAYER - 21) == abs(DEALER - 21):
+						print("Equal")
+						print(" Money : {} ".format(Money))
+						main(Money)
+#----------------------------------------------------------------------------------------------------
 					else:
 						print("You win $ {} !!!".format(Bet*2))
 						Money = Money + (Bet*2)
@@ -954,6 +1045,14 @@ def main(Money=5000):
 							Money = Money -  (Bet*2)
 							print(" Money : {} ".format(Money))
 							main(Money)
+
+
+#----------------------------------------------------------------------------------------------------
+						elif abs(PLAYER - 21) == abs(DEALER - 21):
+							print("Equal")
+							print(" Money : {} ".format(Money))
+							main(Money)
+#----------------------------------------------------------------------------------------------------
 						else:
 							print("You win $ {} !!!".format(Bet*2))
 							Money = Money + (Bet*2)
