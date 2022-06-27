@@ -169,7 +169,7 @@ def main(Money=5000):
 			# Do the comparision between the DEALER and the PLAYER
 			if DEALER >= 17:
 				if abs(PLAYER - 21) > abs(DEALER - 21):
-					print("Bust")
+					print("You lose")
 					Money = Money - (Bet*2)
 					print(" Money : {} ".format(Money))
 					main(Money)
@@ -219,7 +219,7 @@ def main(Money=5000):
 
 				if DEALER >= 17:
 					if abs(PLAYER - 21) > abs(DEALER - 21):
-						print("Bust")
+						print("You lose")
 						Money = Money - (Bet*2)
 						print(" Money : {} ".format(Money))
 						main(Money)
@@ -273,7 +273,7 @@ def main(Money=5000):
 
 					if DEALER >= 17:
 						if abs(PLAYER - 21) > abs(DEALER - 21):
-							print("Bust")
+							print("You lose")
 							Money = Money -  (Bet*2)
 							print(" Money : {} ".format(Money))
 							main(Money)
@@ -327,7 +327,7 @@ def main(Money=5000):
 
 						if DEALER >= 17:
 							if abs(PLAYER - 21) > abs(DEALER - 21):
-								print("Bust")
+								print("You lose")
 								Money = Money -  (Bet*2)
 								print(" Money : {} ".format(Money))
 								main(Money)
@@ -397,7 +397,7 @@ def main(Money=5000):
 #----------------------------------------------------------------------------------------------------
 
 			elif PLAYER > 21:
-				print("Bust")
+				print("You lose")
 				Money = Money -  (Bet*2)
 				print(" Money : {} ".format(Money))
 				main(Money)
@@ -450,7 +450,7 @@ def main(Money=5000):
 			# Do the comparision between the DEALER and the PLAYER
 			if DEALER >= 17:
 				if abs(PLAYER - 21) > abs(DEALER - 21):
-					print("Bust")
+					print("You lose")
 					Money = Money - (Bet*2)
 					print(" Money : {} ".format(Money))
 					main(Money)
@@ -505,7 +505,7 @@ def main(Money=5000):
 
 				if DEALER >= 17:
 					if abs(PLAYER - 21) > abs(DEALER - 21):
-						print("Bust")
+						print("You lose")
 						Money = Money - (Bet*2)
 						print(" Money : {} ".format(Money))
 						main(Money)
@@ -564,7 +564,7 @@ def main(Money=5000):
 
 					if DEALER >= 17:
 						if abs(PLAYER - 21) > abs(DEALER - 21):
-							print("Bust")
+							print("You lose")
 							Money = Money -  (Bet*2)
 							print(" Money : {} ".format(Money))
 							main(Money)
@@ -628,7 +628,7 @@ def main(Money=5000):
 				print("Your Money = {}".format(Money))
 				main(Money)
 			elif PLAYER > 21:
-				print("Bust")
+				print("You lose")
 				Money = Money -  (Bet*2)
 				print(" Money : {} ".format(Money))
 				main(Money)
@@ -684,7 +684,7 @@ def main(Money=5000):
 			# Do the comparision between the DEALER and the PLAYER
 			if DEALER >= 17:
 				if abs(PLAYER - 21) > abs(DEALER - 21):
-					print("Bust")
+					print("You lose")
 					Money = Money - (Bet*2)
 					print(" Money : {} ".format(Money))
 					main(Money)
@@ -740,7 +740,7 @@ def main(Money=5000):
 
 				if DEALER >= 17:
 					if abs(PLAYER - 21) > abs(DEALER - 21):
-						print("Bust")
+						print("You lose")
 						Money = Money - (Bet*2)
 						print(" Money : {} ".format(Money))
 						main(Money)
@@ -799,7 +799,7 @@ def main(Money=5000):
 
 					if DEALER >= 17:
 						if abs(PLAYER - 21) > abs(DEALER - 21):
-							print("Bust")
+							print("You lose")
 							Money = Money -  (Bet*2)
 							print(" Money : {} ".format(Money))
 							main(Money)
@@ -871,7 +871,7 @@ def main(Money=5000):
 				print("Your Money = {}".format(Money))
 				main(Money)
 			elif PLAYER > 21:
-				print("Bust")
+				print("You lose")
 				Money = Money -  (Bet*2)
 				print(" Money : {} ".format(Money))
 				main(Money)
@@ -928,7 +928,7 @@ def main(Money=5000):
 			# Do the comparision between the DEALER and the PLAYER
 			if DEALER >= 17:
 				if abs(PLAYER - 21) > abs(DEALER - 21):
-					print("Bust")
+					print("You lose")
 					Money = Money - (Bet*2)
 					print(" Money : {} ".format(Money))
 					main(Money)
@@ -983,7 +983,7 @@ def main(Money=5000):
 
 				if DEALER >= 17:
 					if abs(PLAYER - 21) > abs(DEALER - 21):
-						print("Bust")
+						print("You lose")
 						Money = Money - (Bet*2)
 						print(" Money : {} ".format(Money))
 						main(Money)
@@ -1041,7 +1041,7 @@ def main(Money=5000):
 
 					if DEALER >= 17:
 						if abs(PLAYER - 21) > abs(DEALER - 21):
-							print("Bust")
+							print("You lose")
 							Money = Money -  (Bet*2)
 							print(" Money : {} ".format(Money))
 							main(Money)
@@ -1102,7 +1102,7 @@ def main(Money=5000):
 				print("Your Money = {}".format(Money))
 				main(Money)
 			elif PLAYER > 21:
-				print("Bust")
+				print("You lose")
 				Money = Money -  (Bet*2)
 				print(" Money : {} ".format(Money))
 				main(Money)
