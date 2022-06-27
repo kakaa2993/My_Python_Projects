@@ -1057,7 +1057,7 @@ def main(Money=5000):
 							print("You win $ {} !!!".format(Bet*2))
 							Money = Money + (Bet*2)
 							print("Your Money = {}".format(Money))
-							main(Money) 
+							main(Money)
 
 
 
@@ -1066,12 +1066,7 @@ def main(Money=5000):
 
 
 
-
-
-
-
-
-		if PLAYER_answer == "h" or PLAYER_answer=="hit":
+		if PLAYER_answer == "h" or PLAYER_answer == "hit":
 			print("")
 
 			#DEALER.................................................
@@ -1086,9 +1081,9 @@ def main(Money=5000):
 
 			#PLAYER...............................................
 			PLAYER_card_6 = random.choice(keys_)
-			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_6] 
+			PLAYER = PLAYER + list_of_all_cards[PLAYER_card_6]
 
-			P_card1, P_card2, P_card3, P_card4, P_card5, P_card6= cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4),cards_generator(PLAYER_card_5),cards_generator(PLAYER_card_6)
+			P_card1, P_card2, P_card3, P_card4, P_card5, P_card6 = cards_generator(PLAYER_card_1),cards_generator(PLAYER_card_2),cards_generator(PLAYER_card_3),cards_generator(PLAYER_card_4),cards_generator(PLAYER_card_5),cards_generator(PLAYER_card_6)
 			print("")
 			print("PLAYER: {}".format(PLAYER))
 			print("")
