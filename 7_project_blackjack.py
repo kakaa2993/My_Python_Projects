@@ -346,7 +346,6 @@ def main(Money=5000):
 								main(Money)
 
 
-   #fix erorr card 5 in dealer in all the other cards
 #---------------------------------------------------------------------------------------------------------------------------------------------
 
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
@@ -395,12 +394,13 @@ def main(Money=5000):
 				print(" Money : {} ".format(Money))
 				main(Money)
 
+
+
+
 		#card 4
 
 		print("(H)it, (S)tand, (D)ouble, down")
 		PLAYER_answer = input("> ").strip().lower()
-
-
 
 #---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -630,7 +630,7 @@ def main(Money=5000):
 
 
 
-		# card 4
+		# card 5
 
 		print("(H)it, (S)tand, (D)ouble, down")
 		PLAYER_answer = input("> ").strip().lower()
@@ -869,15 +869,15 @@ def main(Money=5000):
 				print(" Money : {} ".format(Money))
 				main(Money)
 
-		# cards 5
+
+
+
+
+
+
+		# cards 6
 		print("(H)it, (S)tand, (D)ouble, down")
 		PLAYER_answer = input("> ").strip().lower()
-
-
-		# stand functionality?
-
-
-
 
 
 
