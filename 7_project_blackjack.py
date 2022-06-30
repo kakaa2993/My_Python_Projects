@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#This programe is a blackjack game or 21 game,
+#This program is The blackjack game or 21 game,
 
 import re
 import random
@@ -635,8 +635,6 @@ def main(Money=5000):
 		print("(H)it, (S)tand, (D)ouble, down")
 		PLAYER_answer = input("> ").strip().lower()
 
-
-
 #---------------------------------------------------------------------------------------------------------------------------------------
 
 		# Add the stand function
@@ -815,12 +813,6 @@ def main(Money=5000):
 #---------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
 		if PLAYER_answer == "h" or PLAYER_answer == "hit":
 
 			#DEALER.................................................
@@ -878,8 +870,6 @@ def main(Money=5000):
 		# cards 6
 		print("(H)it, (S)tand, (D)ouble, down")
 		PLAYER_answer = input("> ").strip().lower()
-
-
 
 #---------------------------------------------------------------------------------------------------------------------------------------
 
