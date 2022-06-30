@@ -51,8 +51,6 @@ def cards_generator(card):
 
 
 
-# the problem of equal!!!!!!!!!!!
-
 Money = 5000
 
 def main(Money=5000):
