@@ -1,3 +1,3 @@
 # My Python Projects
-Small projects using Python programming language.
+Small projects were created using Python programming language.
 Feel free to contribute.
