@@ -8,8 +8,8 @@ patool supports 7z (.7z), ACE (.ace), ADF (.adf), ALZIP (.alz), APE (.ape), AR (
 
 ### Prerequisites:
 <!--Remove the below lines and add yours -->
-* Python3 
-* patool 
+* Python3.
+* patool.
 * Run `pip3 install -r requirements.txt` to install required external modules.
 
 ### How to run the script
