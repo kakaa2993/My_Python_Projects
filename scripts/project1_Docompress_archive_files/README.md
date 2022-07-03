@@ -40,6 +40,6 @@ patool supports 7z (.7z), ACE (.ace), ADF (.adf), ALZIP (.alz), APE (.ape), AR (
 
 
 
-## *Author Name*
+## *Created By:*
 <!--Remove the below lines and add yours -->
 [BELAMIRI Zakarya](https://github.com/kakaa2993)
