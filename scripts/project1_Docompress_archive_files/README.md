@@ -26,7 +26,7 @@ The script based on the patool module, and the archive format supported are :
 
 
   
- ###       BEFORE:
+ ### BEFORE:
 <!--Remove the below lines and add yours -->
 ![Screenshot of the Output](https://github.com/kakaa2993/My_Python_Projects/blob/a0400ef02e01ece7bd262aca802d24d5559481ce/scripts/project1_Docompress_archive_files/Screenshot%20from%202021-05-11%2009-42-17.png)
 ![Screenshot of the Output](https://github.com/kakaa2993/My_Python_Projects/blob/a0400ef02e01ece7bd262aca802d24d5559481ce/scripts/project1_Docompress_archive_files/Screenshot%20from%202021-05-11%2009-44-49.png)
