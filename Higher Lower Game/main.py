@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""Higher Lower Game """
+"""Higher Lower Game ,are you lucky guy?  """
 
 import random
 import art
