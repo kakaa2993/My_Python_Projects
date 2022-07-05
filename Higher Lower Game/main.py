@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+"""Higher Lower Game """
+
 import random
 import art
 import game_data
