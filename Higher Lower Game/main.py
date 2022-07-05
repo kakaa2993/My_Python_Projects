@@ -13,7 +13,6 @@ def print_logo():
     replit.clear()
     print(art.logo)
 
-
 def play_game(bio1, bio2):
     print(f"Compare A : {bio1['name']}, a {bio1['description']}, from {bio1['country']}")
     print(art.vs)
@@ -21,8 +20,6 @@ def play_game(bio1, bio2):
     option = input("Who has more followers ? Type 'A' or 'B' : ")
     option = option.strip().upper()
     return option
-
-
 
 def correct_option(bio1, bio2):
     if bio1['follower_count'] > bio2['follower_count']:
