@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""Higher Lower Game ,are you lucky guy? This game will put your knowlege in differet areas in a test"""
+"""Higher Lower Game ,are you lucky guy? This game will put your knowlege in differet areas in a test,are you ready?"""
 
 import random
 import art
