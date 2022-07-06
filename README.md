@@ -1,3 +1,3 @@
 # My Python Projects
-Small projects were created using Python programming language.
+This repository contains Small projects created using Python programming language.
 Feel free to contribute.
