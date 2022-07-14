@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 
 #1. Create a greeting for your program.
 
@@ -14,7 +17,6 @@
 
 
 #--------------------------- solution -------------------------------------
-#!/usr/bin/python3
 
 # display the first message
 
