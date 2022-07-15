@@ -13,5 +13,5 @@ print("Welcome to the tip calculator!")
 the_bill = int(input("What was the total bill? $"))
 tip_percent = int(input("How much tip would you like to give? 10, 12 , 15? "))
 people = int(input("How many people to split the bill? "))
-tip = (the_bill - (the_bill * (tip_percent / 100))) / people
+tip = (the_bill + (the_bill * (tip_percent / 100))) / people
 print(f"Eash person should pay: ${tip}")
