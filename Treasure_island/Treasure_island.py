@@ -106,6 +106,41 @@ else:
   ''')
   else:
     print("You wait until you found a boat will go near to that Island, so afre a while you are now there")
+    print('''
+    
+
+                              ...
+                           _.-"I".
+                        .-'   ;|; '.
+                      .'       |;   ;
+                     ;     ____|___  ;
+                    ;          |;     ;
+                   ;           |';    ;
+                   ;          ;||;     ;
+                  ;            ||;     ;
+                  ;           '||;      ;
+                  ;           '||;      ;
+                 ;            '||;      ;
+                 ;            '|| ;     ;
+                 ;             || ;      ;
+                 ;            '|| ;      ;
+                ;              || ;      ;
+                ;              ||;       ;
+                ;             '||;       ;
+                '----....___   ||;      ;
+                 `""---...__""/||;      ;
+                  `-..__    ""`||/!.    ;
+                        "__..._/''._;   ;
+                   .---"".__.-"||"--';.;
+                  ;--._               ; ;'._
+                  ;'.  ``--..__    __;;..-""i
+                   ; '-._      ````  ;   .-';
+                   '.`._ ""---...____i.-" , '
+                     '-.`-..__       ; _,'.'
+                        '-._  ``--- / '_.'
+                            ""--...i--"
+
+    ''')
     print("""You walked on the Island untile you find a fighte  and a dragon, the fighter invent you to a combat and if you 
     win he will give you the Treasure, but if you loose you will die:""")
     print("""
