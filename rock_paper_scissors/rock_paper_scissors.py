@@ -12,6 +12,7 @@ The outcome of the game is determined by 3 simple rules:
 import random
 import time
 
+
 random.seed(time.time())
 
 rock = '''
@@ -45,6 +46,7 @@ player = int(input("What do you choose? Type 0 for Rock, 1 for Paper and 2 for S
 choices = [rock, paper, scissors]
 computer_choice = random.choice(choices)
 
+# print the player ASCII
 if player == 0:
 	print(rock)
 elif player == 1:
@@ -54,8 +56,10 @@ elif player == 2:
 else:
 	print('You are wrong !')
 
+#print the computer ASCII
 print("Computer chose:")
 print(computer_choice)
+
 
 # -1 : means lose
 #  0 : means equal
@@ -71,7 +75,7 @@ computer_rock = [ 0,-1, 1]
 computer_paper = [ 1, 0,-1]
 computer_scissors = [-1, 1, 0]
 
-
+# print the result 
 result = 0
 if computer_choice == rock:
 	result = computer_rock[int(player)]
