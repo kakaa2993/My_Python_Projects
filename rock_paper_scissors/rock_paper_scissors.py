@@ -57,7 +57,16 @@ else:
 print("Computer chose:")
 print(computer_choice)
 
-#
+# -1 : means lose
+#  0 : means equal
+#  1 : means win
+
+#         Rock Paper Scissors
+#Rock       0    -1      1
+#Paper      1     0     -1
+#Scissors  -1     1      0 
+
+
 computer_rock = [ 0,-1, 1]
 computer_paper = [ 1, 0,-1]
 computer_scissors = [-1, 1, 0]
