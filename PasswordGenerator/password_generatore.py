@@ -21,12 +21,12 @@ password = []
 index = 0
 for _ in range(num_of_letters):
 	index = random.choice(letters)
-	password.append(letters[index])
+	password.append(index)
 for _ in range(num_of_symbols):
-	index = random.choice(letters)
-	password.append(symbols[index])
-for _ in range(num_of_lnumbers):
-	index = random.choice(letters)
-	password.append(numbers[index])
+	index = random.choice(symbols)
+	password.append(index)
+for _ in range(num_of_numbers):
+	index = random.choice(numbers)
+	password.append(index)
 
 print(password)
