@@ -6,7 +6,7 @@ for num in range(ord("A"),ord("z")):
 	if chr(num) not in ['[', '\\', ']', '^', '_', '`',]:
 		letters.append(chr(num))
 numbers = [num for num in range(10)]
-symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+',"\\"]
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 #symobls = [ _ for _ in '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~']
 
 # Display the welcome message
@@ -28,5 +28,11 @@ for _ in range(num_of_symbols):
 for _ in range(num_of_numbers):
 	index = random.choice(numbers)
 	password.append(index)
-
 print(password)
+# change the indexes of the characters in the password list
+generated_password = []
+max = len(password)
+for chr in password:
+	random_index = random.randint(0, max)
+	generated_password.insert(random_index, chr)
+print(generated_password)
