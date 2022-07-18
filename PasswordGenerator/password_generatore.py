@@ -46,19 +46,14 @@ for _ in range(num_of_symbols):
 	index = random.choice(symbols)
 	password.append(index)
 for _ in range(num_of_numbers):
-	index = random.choice(numbers)
+	index = str(random.choice(numbers))
 	password.append(index)
-
 # change the indexes of the characters in the password list
-generated_password = []
-max = len(password)
-for chr in password:
-	random_index = random.randint(0, max)
-	generated_password.insert(random_index, str(chr))
+random.shuffle(password)
 
 #display the password
 
-finall_password = ''.join(generated_password)
+finall_password = ''.join(password)
 print('''
             .-""-.
            / .--. \\
