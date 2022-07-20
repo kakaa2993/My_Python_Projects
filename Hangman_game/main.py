@@ -13,6 +13,7 @@ end_of_game = False
 lives = 6
 
 #print it at the start of the game.
+
 os.system("clear")
 print(logo)
 
@@ -20,10 +21,12 @@ print(logo)
 #print(f'Pssst, the solution is {chosen_word}.')
 
 #Create blanks
+
 display = []
 for _ in range(word_length):
     display += "_"
 
+#the main loop of the game
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
     os.system("clear")
