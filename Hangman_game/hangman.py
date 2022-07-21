@@ -108,7 +108,7 @@ while not end_of_game:
         print('You lose')
         end_of_game = True
 
-    print(-lives)
+    print(lives)
 
 
 
