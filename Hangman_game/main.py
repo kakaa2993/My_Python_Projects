@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-#Step 5
 from hangman_art import stages, logo
 import random
 from hangman_words import word_list
+import os
 
 
 chosen_word = random.choice(word_list)
@@ -13,7 +13,7 @@ end_of_game = False
 lives = 6
 
 #print it at the start of the game.
-
+os.system("clear")
 print(logo)
 
 #Testing code
@@ -26,6 +26,7 @@ for _ in range(word_length):
 
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
+    os.system("clear")
 
     # If the user has entered a letter they've already guessed, print the letter and let them know.
     if guess in display:
