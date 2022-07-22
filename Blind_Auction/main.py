@@ -12,15 +12,15 @@ end_of_bid = False
 bidders_dictionary = {}
 
 def find_the_hghiest_bidder(bidders):
-    winner_bidder = ""
+    winner = ""
     top_bid_amount = 0
     for bidder in bidders:
         bidder_bid = bidders[bidder]
         if bidder_bid >= top_bid_amount:
             top_bid_amount = bidder_bid
-            winner_bidder = bidder
+            winner = bidder
     print()
-    print(f"The winner is '{winner_bidder}' with a bid of '${top_bid_amount}'.")
+    print(f"The winner is '{winner}' with a bid of '${top_bid_amount}'.")
     print("Have a nice day!")
 
 while not end_of_bid:
@@ -34,7 +34,7 @@ while not end_of_bid:
         find_the_hghiest_bidder(bidders_dictionary)
 
         end_of_bid = True
-    else:
+    elif other_bidders == 'yes':
         os.system("clear")
     
             
