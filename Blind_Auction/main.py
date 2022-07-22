@@ -23,7 +23,6 @@ def find_the_hghiest_bidder(bidders):
     print(f"The winner is '{winner_bidder}' with a bid of '${top_bid_amount}'.")
     print("Have a nice day!")
 
-
 while not end_of_bid:
     bidder_name = input("What is your name?: ")
     bid_amount = int(input("What is your bid?: $"))
@@ -44,7 +43,6 @@ while not end_of_bid:
 
 
 
-#def find_the_winner(bidder_name, bid_amount):
 
 
 
