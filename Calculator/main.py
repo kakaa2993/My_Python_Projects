@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+
 from art import logo
 import os
 
-#Calculator
 
 # addition
 
@@ -28,6 +28,7 @@ operations = {
 	'/': divide,
 }
 
+
 def calculation():
     os.system("clear")
     print(logo)
@@ -52,4 +53,5 @@ def calculation():
             calculation()
         elif replay == 'y':
             num1 = result
+
 calculation()
