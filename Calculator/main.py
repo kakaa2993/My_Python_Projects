@@ -27,43 +27,26 @@ operations = {
 	'/': divide,
 }
 
-num1 = int(input("What's the first number?: "))
+def calculation():
+    num1 = int(input("What's the first number?: "))
 
-for symbol in operations:
-    print(symbol)
+    for symbol in operations:
+        print(symbol)
 
-operation_symbol = input('Pick an operation symbol from the line above: ')
-
-num2 = int(input("What's the second number?: "))
-
-calculation_function = operations[operation_symbol]
-answer = round(calculation_function(num1, num2),2)
-
-
-print(f" {num1} {operation_symbol} {num2} = {answer}")
-
-
-def replay(result):
     player_want_to_continue = True
-    replay = input("do you want to continue? type 'y' to continue and type 'n' to exit: ").lower()
-
-    if replay == 'n':
-        player_want_to_continue = False
-        return 
     while player_want_to_continue:
-        
 
-        operation_symbol = input("Pick an operation symbol ('+'','-','*','/') : ")
-        num3 = int(input("What's the next number?: "))
+        operation_symbol = input("Pick a symbol from the above : ")
+        num2 = int(input("What's the next number?: "))
 
         calculation_function = operations[operation_symbol]
-        result = calculation_function(result, num3)
+        result = calculation_function(num1, num2)
 
-        print(f" {result} {operation_symbol} {num3} = {result}")
-        replay = input("do you want to continue? type 'y' to continue and type 'n' to exit: ").lower()
+        print(f" {num1} {operation_symbol} {num2} = {result}")
+        replay = input(f"Do you want to continue with '{result}'? type 'y' to continue and type 'n' to restart the calculation.\n ").lower()
 
         if replay == 'n':
-            player_want_to_continue = False
-    #replay(final_result)
-
-replay(answer)
+            calculation()
+        elif replay == 'y':
+            num1 = result
+calculation()
