@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-
+from art import logo
+import os
 
 #Calculator
 
@@ -28,7 +29,9 @@ operations = {
 }
 
 def calculation():
-    num1 = int(input("What's the first number?: "))
+    os.system("clear")
+    print(logo)
+    num1 = float(input("What's the first number?: "))
 
     for symbol in operations:
         print(symbol)
@@ -36,8 +39,8 @@ def calculation():
     player_want_to_continue = True
     while player_want_to_continue:
 
-        operation_symbol = input("Pick a symbol from the above : ")
-        num2 = int(input("What's the next number?: "))
+        operation_symbol = input("Pick a symbol ('+','-','*','/') : ")
+        num2 = float(input("What's the next number?: "))
 
         calculation_function = operations[operation_symbol]
         result = calculation_function(num1, num2)
