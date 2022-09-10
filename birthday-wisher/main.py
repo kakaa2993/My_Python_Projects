@@ -5,8 +5,8 @@ import datetime as dt
 import pandas
 
 
-my_email = ""
-my_password = ""
+my_email = "Test@gmail.com"     # <-- write your email
+my_password = "password"        # <-- write your password
 letter_templates_list = ["letter_1.txt", "letter_2.txt", "letter_3.txt"]
 
 # compare the current day and the current month with the birthdays of the people in the birthdays.csv file
@@ -31,18 +31,6 @@ for index, is_birthday_person in data.iterrows():
             connection.sendmail(
                 from_addr=my_email,
                 to_addrs=recipient_email,
-                msg=f"Subject:Happy birthday!\n\n{letter}"
+                msg=f"Subject:Happy birthday {recipient_name}!\n\n{letter}"
             )
-
-
-
-
-
-
-
-
-
-
-
-
 
