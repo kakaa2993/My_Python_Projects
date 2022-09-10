@@ -20,9 +20,8 @@ for index, is_birthday_person in data.iterrows():
         recipient_email = is_birthday_person.email
         recipient_name = is_birthday_person["name"]
         with open(f"letter_templates/{random.choice(letter_templates_list)}", "r") as letter_file:
-            letter_list = letter_file.readlines()
-            letter_list[0] = letter_list[0][0:letter_list[0].index("[")] + recipient_name + ",\n"
-        letter = "".join(letter_list)
+            letter = letter_file.read()
+            letter = letter.replace("[NAME]", recipient_name)
 
         # Send letter to that person
         with smtplib.SMTP("smtp.gmail.com") as connection:
